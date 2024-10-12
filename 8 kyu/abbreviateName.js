@@ -13,5 +13,8 @@ patrick feeney => P.F
 //Answer
 
 function abbrevName(name){
-  return `${name.split(' ')[0][0]}.${name.split(' ')[1][0]}`.toUpperCase()
+  const firstIntial = name.split(' ')[0][0];
+  const lastIntial = name.split(' ')[1][0];
+  
+  return `${firstIntial}.${lastIntial}`.toUpperCase();
 }
